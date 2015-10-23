@@ -37,7 +37,7 @@ var roundback=function(value,day_index){
 
 var main=function(arg){
 if(arg.length<3){
-	console.error('Usage:dd mm yyyy');return;
+	return'Usage:dd mm yyyy';
 }	
 var date=arg[0];
 var month=arg[1];
@@ -51,4 +51,5 @@ else
 return daysIndex(ans);
 }
 
+if(arguments)
 console.log(main(arguments));
