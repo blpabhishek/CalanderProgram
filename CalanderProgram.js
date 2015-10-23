@@ -37,7 +37,7 @@ var roundback=function(value,day_index){
 
 var main=function(arg){
 if(arg.length<3){
-	console.error('Give as dd mm yyyy');return;
+	console.error('Usage:dd mm yyyy');return;
 }	
 var date=arg[0];
 var month=arg[1];
@@ -48,7 +48,7 @@ if(Math.abs(value)==value)
 	var ans=round(value,index);	
 else
 	var ans=roundback(Math.abs(value),index);				
-console.log(daysIndex(ans));
+return daysIndex(ans);
 }
 
-main(arguments);
+console.log(main(arguments));
